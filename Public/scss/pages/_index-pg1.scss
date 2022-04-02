@@ -1,0 +1,14 @@
+#decore {
+    position: absolute;
+    margin-top: -280px;
+    margin-left: 850px;
+}
+
+.home-heading {
+    cursor: pointer;
+    font-family: map-get($fonts, "home-heading-font");
+    font-size: 30px;
+    letter-spacing: 6px;
+    color: map-get($colors, "default-heading-color");
+    position: absolute;
+}

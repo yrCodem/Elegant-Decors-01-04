@@ -1,0 +1,119 @@
+.item {
+    width: calc(100% - 40px);
+    height: calc(100vh - 40px);
+    min-height: 460px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+
+}
+
+#elegant {
+    cursor: pointer;
+    font-family: $fonts, "home-heading-font";
+    font-size: 120px;
+    letter-spacing: 6px;
+    color: #767676;
+    position: relative;
+    padding-top: 20px;
+    overflow: hidden;
+    transition: color 1s;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+
+        height: 1px;
+
+        background-color: #000;
+        left: -101%;
+        transition: left 1s;
+    }
+
+    &:before {
+        margin-top: -20px;
+    }
+
+    &:after {
+        bottom: 0;
+    }
+
+    span {
+        display: inline-block;
+        transform: rotate3d(0, 1, 0, 0deg);
+        transition: transform .6s;
+
+        &:nth-child(1) {
+            transition-delay: .6s
+        }
+
+        &:nth-child(2) {
+            transition-delay: .5s
+        }
+
+        &:nth-child(3) {
+            transition-delay: .4s
+        }
+
+        &:nth-child(4) {
+            transition-delay: .3s
+        }
+
+        &:nth-child(5) {
+            transition-delay: .2s
+        }
+
+        &:nth-child(6) {
+            transition-delay: .1s
+        }
+
+        &:nth-child(7) {
+            transition-delay: 0s
+        }
+    }
+
+    &:hover {
+        color: $colors, "home-heading-color";
+
+        span {
+            transform: rotate3d(0, 1, 0, 360deg);
+
+            &:nth-child(1) {
+                transition-delay: 0s
+            }
+
+            &:nth-child(2) {
+                transition-delay: .1s
+            }
+
+            &:nth-child(3) {
+                transition-delay: .2s
+            }
+
+            &:nth-child(4) {
+                transition-delay: .3s
+            }
+
+            &:nth-child(5) {
+                transition-delay: .4s
+            }
+
+            &:nth-child(6) {
+                transition-delay: .5s
+            }
+
+            &:nth-child(7) {
+                transition-delay: .6s
+            }
+        }
+
+        &:before,
+        &:after {
+            left: 0;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+// html {
+//     overflow: hidden;
+// }
+
+body {
+    background-color: rgb(230, 216, 216)
+}
+
+//abstract
+@import "abstract/variables";
+@import "abstract/mixin";
+
+//pages
+@import "pages/index-pg1";
+@import "pages/error";
+
+//layouts
+
+//components
+@import "components/home-heading-animation";
