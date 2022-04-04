@@ -3,7 +3,8 @@
 // }
 
 body {
-    background-color: rgb(230, 216, 216)
+    background-color: rgb(230, 216, 216);
+    overflow: hidden;
 }
 
 
@@ -19,3 +20,7 @@ body {
 
 //components
 @import "components/home-heading-animation";
+@import "components/home-btn";
+
+//test
+@import "test/test-slider";
