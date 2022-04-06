@@ -9,7 +9,7 @@ body {
 
 #decore {
   position: absolute;
-  margin-top: -280px;
+  margin-top: -295px;
   margin-left: 850px;
 }
 
@@ -218,6 +218,8 @@ body {
 .btn-3 span:hover {
   color: black;
   background-color: transparent;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .btn-container::before {
@@ -232,8 +234,10 @@ body {
 }
 
 .btn-container:hover::before {
-  -webkit-animation: animate 0.5s linear forwards;
-          animation: animate 0.5s linear forwards;
+  -webkit-animation: animate 0.5s linear;
+          animation: animate 0.5s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes animate {
