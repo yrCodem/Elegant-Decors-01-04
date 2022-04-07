@@ -3,91 +3,6 @@ body {
   overflow: hidden;
 }
 
-header {
-  height: calc(100vh - 22px);
-  background-size: cover;
-  /* background: url("https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988534/header.jpg") fixed bottom; */
-  padding: 20px 70px;
-}
-header nav {
-  position: fixed;
-  top: 0;
-  padding: 36px 36px 20px;
-  z-index: 20;
-}
-header nav .toggle {
-  display: none;
-  top: 26px;
-  left: 20px;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  z-index: 21;
-}
-header nav .toggle:focus {
-  outline: none;
-}
-header nav.active .toggle span {
-  background-color: #000;
-}
-header nav .toggle.active {
-  left: 32%;
-}
-header nav .toggle.active .first {
-  top: 16px;
-  transform: rotate(-45deg);
-}
-header nav .toggle.active .last {
-  top: 0;
-  transform: rotate(45deg);
-}
-header nav .toggle .hide {
-  transition: 0s;
-  visibility: hidden;
-}
-header nav .toggle span {
-  display: block;
-  width: 30px;
-  height: 2px;
-  border-radius: 40px;
-}
-header nav .toggle span:not(:last-of-type) {
-  margin-bottom: 6px;
-}
-header nav .logo {
-  flex-basis: 56%;
-  padding-left: 50px;
-}
-header .navigation-bar.show {
-  width: 40%;
-}
-header .navigation-bar.show a {
-  color: #ccc !important;
-}
-header .navigation-bar.show a:hover {
-  color: #fff !important;
-}
-header .navigation-bar ul li {
-  flex: 1;
-  padding: 0 10px;
-}
-header .navigation-bar a {
-  text-decoration: none;
-  transition: all .5s;
-  font-size: 16px;
-}
-header nav.active .navigation-bar a {
-  color: #000;
-}
-header .navigation-bar .underline {
-  height: 2px;
-  width: 0;
-  left: 50%;
-  bottom: -4px;
-  transition: all .3s;
-  display: block;
-}
-
 #homepage {
   height: 100vh;
 }
@@ -263,6 +178,7 @@ header .navigation-bar .underline {
   height: 65px;
   top: 69.37vh;
   left: 43vw;
+  cursor: pointer;
 }
 
 .btn {
@@ -289,6 +205,7 @@ header .navigation-bar .underline {
   padding: 20px 20px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .btn-3 {
@@ -297,7 +214,8 @@ header .navigation-bar .underline {
 
 .btn-3 span {
   color: white;
-  background-color: #363837;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .btn-3 span:hover {
@@ -305,6 +223,7 @@ header .navigation-bar .underline {
   background-color: transparent;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  cursor: pointer;
 }
 
 .btn-container::before {
@@ -323,6 +242,7 @@ header .navigation-bar .underline {
           animation: animate 0.5s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  cursor: pointer;
 }
 
 @-webkit-keyframes animate {
@@ -393,6 +313,7 @@ header .navigation-bar .underline {
 .btn-container:hover::after {
   -webkit-animation: animates 0.5s linear forwards;
           animation: animates 0.5s linear forwards;
+  cursor: pointer;
 }
 
 @-webkit-keyframes animates {
@@ -447,5 +368,115 @@ header .navigation-bar .underline {
     border-bottom-color: black;
     border-left-color: black;
   }
+}
+
+header {
+  height: calc(100vh - 22px);
+  background-size: cover;
+  padding: 20px 70px;
+}
+
+header nav {
+  position: fixed;
+  top: 0;
+  padding: 36px 36px 20px;
+  z-index: 20;
+}
+
+header nav .toggle {
+  display: none;
+  top: 26px;
+  left: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  z-index: 21;
+}
+
+header nav .toggle:focus {
+  outline: none;
+}
+
+header nav .toggle.active {
+  left: 32%;
+}
+
+header nav .toggle.active .first {
+  top: 16px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+header nav .toggle.active .last {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+header nav .toggle .hide {
+  -webkit-transition: 0s;
+  transition: 0s;
+  visibility: hidden;
+}
+
+header nav .toggle span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  border-radius: 40px;
+}
+
+header nav .toggle span:not(:last-of-type) {
+  margin-bottom: 6px;
+}
+
+header nav.active .toggle span {
+  background-color: #000;
+}
+
+header nav.active .navigation-bar a {
+  color: #000;
+}
+
+header nav .logo {
+  -ms-flex-preferred-size: 56%;
+      flex-basis: 56%;
+  padding-left: 50px;
+}
+
+header .navigation-bar.show {
+  width: 40%;
+}
+
+header .navigation-bar.show a {
+  color: #ccc !important;
+}
+
+header .navigation-bar.show a:hover {
+  color: #fff !important;
+}
+
+header .navigation-bar ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 10px;
+}
+
+header .navigation-bar a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 16px;
+}
+
+header .navigation-bar .underline {
+  height: 2px;
+  width: 0;
+  left: 50%;
+  bottom: -4px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
