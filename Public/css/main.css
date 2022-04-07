@@ -3,6 +3,91 @@ body {
   overflow: hidden;
 }
 
+header {
+  height: calc(100vh - 22px);
+  background-size: cover;
+  /* background: url("https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988534/header.jpg") fixed bottom; */
+  padding: 20px 70px;
+}
+header nav {
+  position: fixed;
+  top: 0;
+  padding: 36px 36px 20px;
+  z-index: 20;
+}
+header nav .toggle {
+  display: none;
+  top: 26px;
+  left: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  z-index: 21;
+}
+header nav .toggle:focus {
+  outline: none;
+}
+header nav.active .toggle span {
+  background-color: #000;
+}
+header nav .toggle.active {
+  left: 32%;
+}
+header nav .toggle.active .first {
+  top: 16px;
+  transform: rotate(-45deg);
+}
+header nav .toggle.active .last {
+  top: 0;
+  transform: rotate(45deg);
+}
+header nav .toggle .hide {
+  transition: 0s;
+  visibility: hidden;
+}
+header nav .toggle span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  border-radius: 40px;
+}
+header nav .toggle span:not(:last-of-type) {
+  margin-bottom: 6px;
+}
+header nav .logo {
+  flex-basis: 56%;
+  padding-left: 50px;
+}
+header .navigation-bar.show {
+  width: 40%;
+}
+header .navigation-bar.show a {
+  color: #ccc !important;
+}
+header .navigation-bar.show a:hover {
+  color: #fff !important;
+}
+header .navigation-bar ul li {
+  flex: 1;
+  padding: 0 10px;
+}
+header .navigation-bar a {
+  text-decoration: none;
+  transition: all .5s;
+  font-size: 16px;
+}
+header nav.active .navigation-bar a {
+  color: #000;
+}
+header .navigation-bar .underline {
+  height: 2px;
+  width: 0;
+  left: 50%;
+  bottom: -4px;
+  transition: all .3s;
+  display: block;
+}
+
 #homepage {
   height: 100vh;
 }
