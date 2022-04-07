@@ -7,61 +7,42 @@ html(lang="en")
         title Home
         link(rel="stylesheet", href=" /css/main.css")
     body
-      header
-        nav
-          .navigation-bar
-            ul
-              li.active
-                a(href='/view/index.pug')
-                  | Home
-                  span.underline
-              li
-                a(href='#')
-                  | Reservations
-                  span.underline
-              li
-                a(href='#')
-                  | Menu
-                  span.underline
-              li
-                a(href='#')
-                  | Blog
-                  span.underline
-              li
-                a(href='#')
-                  | Features
-                  span.underline
-              li
-                a(href='#')
-                  | Shop
-                  span.underline
-              li
-                a(href='#')
-                  | Contact
-                  span.underline
-
-       
-        #homepage
+          #homepage
             img.home-page-img(src="/img/wooden-bg.jpg", alt="", srcset="")
             .item
-                #elegant
-                    span E
-                    span L
-                    span E
-                    span G
-                    span A
-                    span N
-                    span T
+              #elegant
+                span E
+                span L
+                span E
+                span G
+                span A
+                span N
+                span T
             #decore
                 h1.home-heading DECORE
-            .btn-container
-                button.btn.btn-3.hover-border-2
-                    span More 
+            #sec01
+              .scroll-down-btn
+                .text Scroll
+                .arrow
+                .arrow2
+            #sec02
+            a.logo(href='https://front.codes/' target='_blank')
+                input#menu-icon.menu-icon(type='checkbox' name='menu-icon')
+                label(for='menu-icon')
+                nav.nav
+                    ul.pt-5
+                        li
+                          a(href='#') Work
+                        li
+                          a(href='#') Studio
+                        li
+                          a(href='#') News
+                        li
+                          a(href='#') Contact
+
+
 
         
-
-
-                
 
 
 
